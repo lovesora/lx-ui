@@ -1,6 +1,6 @@
 {
   "name": "lx-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "react tech's ui",
   "main": "src/index.js",
   "scripts": {
