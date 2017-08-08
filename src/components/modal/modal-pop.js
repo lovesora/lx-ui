@@ -1,5 +1,5 @@
 import Modal from './modal-defult';
-import PopConfirm from '../pop-box/pop-confirm';
+import PopBox from '../pop-box/pop-box';
 
 class ModalPop extends Modal {
     constructor (...args) {
