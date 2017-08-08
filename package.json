@@ -1,0 +1,26 @@
+{
+  "name": "lx-ui",
+  "version": "0.0.1",
+  "description": "react tech's ui",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lovesora/lx-ui.git"
+  },
+  "keywords": [
+    "react",
+    "ui"
+  ],
+  "author": "liuxin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lovesora/lx-ui/issues"
+  },
+  "homepage": "https://github.com/lovesora/lx-ui#readme",
+  "devDependencies": {
+    "react": "^15.5.4"
+  }
+}
