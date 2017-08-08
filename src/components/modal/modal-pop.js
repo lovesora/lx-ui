@@ -7,6 +7,10 @@ class ModalPop extends Modal {
         this.state.isOpen = this.props[0][0].isOpen;
     }
 
+    closeBgModal (e) {
+        return;
+    }
+
     componentWillReceiveProps (nextProps) {
         this.setState({
             isOpen: nextProps.isOpen

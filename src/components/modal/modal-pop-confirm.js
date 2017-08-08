@@ -1,10 +1,14 @@
 import Modal from './modal-defult';
 import PopConfirm from '../pop-box/pop-confirm';
 
-class ModalPopComfirm extends Modal {
+class ModalPopConfirm extends Modal {
     constructor (...args) {
         super(args);
         this.state.isOpen = this.props[0][0].isOpen;
+    }
+
+    closeBgModal (e) {
+        return;
     }
 
     componentWillReceiveProps (nextProps) {
@@ -37,4 +41,4 @@ class ModalPopComfirm extends Modal {
     }
 }
 
-export default ModalPopComfirm;
+export default ModalPopConfirm;
