@@ -1,9 +1,13 @@
 export default (props) => {
+    let borderColor = props.borderColor || 'rgba(151, 151, 151, .5)';
+
     let style = {
+        container: {
+            padding: '2rem'
+        },
         text: {
-            margin: '2rem 2rem 0 2rem',
             padding: '1rem',
-            border: '1px solid rgba(151, 151, 151, .5)',
+            border: '1px solid ' + borderColor,
             borderRadius: '8px 8px 0 0',
             backgroundColor: '#fff',
             color: '#7F7E7F',
@@ -13,7 +17,8 @@ export default (props) => {
         },
         button: {
             backgroundColor: '#fff',
-            margin: '0 2rem 2rem 2rem',
+            border: '1px solid ' + borderColor,
+            borderTop: '0',
             borderRadius: '0 0 8px 8px',
             color: '#7F7E7F',
             textAlign: 'center',
@@ -21,7 +26,7 @@ export default (props) => {
             lineHeight: '4rem'
         }
     }
-    return <div>
+    return <div style={style.container}>
         <div style={{...style.text, ...props.textStyle}}>{props.text}</div>
         <div style={style.button} onClick={props.onClick}>{props.buttonText}</div>
     </div>;
